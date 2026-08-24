@@ -149,7 +149,7 @@ function setStatus(id,status){const a=getOrders();const i=a.findIndex(o=>o.id===
 function clearOrders(){if(confirm('Hapus semua data pesanan di browser ini?')){localStorage.removeItem('lanzy_orders');renderOrders()}}
 function showSettings(){
  $('adminContent').innerHTML=`<h3>Pengaturan Toko</h3>
- <label>Nomor WhatsApp Admin</label><input id="wa" value="${esc(localStorage.getItem('lanzy_wa')||'628xxxxxxxxxx')}">
+ <label>Nomor WhatsApp Admin</label><input id="wa" value="${esc(localStorage.getItem('lanzy_wa')||'6287789001264')}">
  <label>Nama/nomor rekening atau akun pembayaran</label><input id="payinfo" value="${esc(localStorage.getItem('lanzy_payinfo')||'Isi rekening DANA/Bank/QRIS di sini')}">
  <label>PIN Admin</label><input id="pin" type="password" placeholder="PIN baru">
  <button class="btn" style="margin-top:15px" onclick="saveSettings()">Simpan Pengaturan</button>
